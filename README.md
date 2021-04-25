@@ -3,7 +3,7 @@ Landmark Feature Convolutional Networks
 
 This repo aims to learning convolutional features *outside the box*.
 
-### What's the difference from previous convolutions?
+### What's the difference?
 
 <!-- #### Box convolution-->
 **Box convolution**
