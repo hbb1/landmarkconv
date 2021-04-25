@@ -31,11 +31,11 @@ To understand, here is a very simple example (though not restrictly)
 <!-- The landmark conv can generate equivalent  -->
 <img src="imgs/illustration.jpg" width="1024"> 
 
-The landmark conv tends generate equivalent representation if the they have the same spatial relationship. 🐷💗🐻
+The landmark conv tends to generate equivalent representation if the they have the same spatial relationships. 🐷💗🐻
 
 Visualization in natural image. 
 
-<img src="imgs/landmarks.png" width="512"> 
+<img src="imgs/landmarks.png" width="1024"> 
 
 ----------------------------------------------------------------
 
