@@ -3,7 +3,7 @@ Landmark Feature Convolutional Networks
 
 This repo aims to learning convolutional features *outside the box*.
 
-### What's the difference between previous convolution?
+### What's the difference from previous convolutions?
 
 <!-- #### Box convolution-->
 **Box convolution**
@@ -22,7 +22,7 @@ This repo aims to learning convolutional features *outside the box*.
 
 3. The landmark conv also enlarges the receptive filed without introducing extra paramter.
 ----------------------------------------------------------------
-### What's the possible advantage of landmark conv compared to box conv?
+### What's the possible advantage of landmark conv compared to box convs?
 1. Spatial robustness
 2. Long range information modeling
 
