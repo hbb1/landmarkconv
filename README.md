@@ -60,9 +60,16 @@ from .lib.layers.conv8 import PConv2d8
 ```
 
 
+--------------------
+
+### TODO
+
+- [x] Performance on visual grounding (image), see [LBYLNet](https://github.com/svip-lab/LBYLNet.git)
+- [ ] Visual grounding in other domain (video, 3D, RGBD).
+- [ ] Object detection and semantic segmentation and so on.
+
+
 ----------------------------------------------------------------
-
-
 ### Citation
 The convolution is first proposed in this paper, if you find it helpful in your research, please cite our paper.
 
