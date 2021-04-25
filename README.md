@@ -5,15 +5,16 @@ This repo aims to learning convolutional features *outside the box*.
 
 ### What's the difference?
 
-<!-- #### Box convolution-->
-**Box convolution**
+#### Box convolution
+
 <img src="imgs/boxconv.jpg" width="384"> 
 
 1. Standard conv has a quite limited receptive field. 
 2. Dilated conv enlarges the receptive field without introducing extra paramter, but leads to many holes.
 3. Deformvable conv make the receptive field more flexible by adding learnable offsets. However, the receptive filed is still box-like since the learned offsets are usually small.
 
-**Landmark convolution**
+#### Landmark convolution
+
 <img src="imgs/landmarkconv.jpg" width="384"> 
 
 1. While box conv updates representations with neighboring *points*, we update representation with neighboring *regions*, which are extracted with a *permutation* invariant function. 
