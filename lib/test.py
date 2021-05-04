@@ -6,6 +6,7 @@ from torch.autograd import Function
 import torch.nn as nn
 from layers.conv4 import TopLeftPool, TopRightPool, BottomLeftPool, BottomRightPool
 from layers.conv8 import I1Pool, I2Pool, I3Pool, I4Pool, I5Pool, I6Pool, I7Pool, I8Pool
+import pdb
 
 var = torch.tensor([
     [0,0,0,0,0],
@@ -33,7 +34,7 @@ guide.register_hook(save_grad('g'))
 y.sum().backward()
 
 input = torch.randn(4, 4, 8,8,dtype=torch.double,requires_grad=True).cuda()
-guide = torch.sigmoid(torch.randn(4, 1, 8,8,dtype=torch.double,requires_grad=True)).cuda()
+guide = torch.sigmoid(torch.randn(4, 4, 8,8,dtype=torch.double,requires_grad=True)).cuda()
 test = gradcheck(lambda x, y: I3Pool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
 print(test)
 test = gradcheck(lambda x, y: I4Pool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
@@ -50,10 +51,5 @@ test = gradcheck(lambda x, y: I1Pool()(x, y), (input, guide), eps=1e-6, raise_ex
 print(test)
 test = gradcheck(lambda x, y: I2Pool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
 print(test)
-# test = gradcheck(lambda x, y: I3Pool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
-# print(test)
 test = gradcheck(lambda x, y: I4Pool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
 print(test)
-# test = gradcheck(lambda x, y: BottomLeftPool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
-# print(test)
-# test = gradcheck(lambda x, y: BottomRightPool()(x, y), (input, guide), eps=1e-6, raise_exception=True)
