@@ -44,7 +44,7 @@ Visualization in natural image.
 #### requirements
 - Linux with Python 3.6
 - CUDA support 
-- gcc 4.9 or above
+- gcc 5.4
 
 ```bash
 # git clone git://github.com/hbb1/landmarkconv

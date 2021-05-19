@@ -93,6 +93,7 @@ import torch
 import torch.nn as nn
 class PConv2d4(nn.Conv2d):
     def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         # according to the original papr, there are no gates.
         # self.gates = nn.Parameter(torch.ones(4, args[0]//4).view(4,-1, 1, 1))
         self.pools = [TopLeftPool(), TopRightPool(), BottomLeftPool(), BottomRightPool()]
