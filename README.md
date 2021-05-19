@@ -1,7 +1,7 @@
 # LandmarkConv
 Landmark Feature Convolutional Networks
 
-This repo aims to learning convolutional features *outside the box*.
+This repo implements landmarkconv that aims to learn convolutional features *outside the box*.
 
 ### What's the difference?
 
